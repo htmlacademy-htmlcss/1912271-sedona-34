@@ -480,7 +480,7 @@ background: #FFFFFF;
     margin-right: 18px;
 }
 
-.lodge-card:nth-child(3) {
+.lodge-card:nth-child(3n) {
     margin: 0;
 }
 
