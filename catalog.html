@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Отдых в Седоне</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
@@ -140,23 +141,25 @@
             <img class="lodge-card-image" src="images/catalog-lodge-amararesort&spa.jpg"
             width="300" height="211" alt="hotel-amara-resort">
             <h3 class="lodge-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p class="lodge-type"> Гостиница </p>
-          <p class="lodge-card-price">От 4000 ₽</p>
-          <p class="stars" aria-label="4 звезды">
-            <img src="images/icon-star.svg">
-            <img src="images/icon-star.svg">
-            <img src="images/icon-star.svg">
-            <img src="images/icon-star.svg"> </p>
-          <p class="rating"> Рейтинг: 8,5</p>
+            <p  class="lodge-card-type-price">
+          <span> Гостиница </span>
+          <span>От 4000 ₽</span> </p>
+          <p  class="lodge-card-button-wraper">
           <a class="button lodge-card-button" href="#">Подробнее</a>
-          <a class="button button-add-favorites" href="#">В избранное</a>
+          <a class="button button-add-favorites" href="#">В избранное</a> </p>
+          <p class="lodge-card-star-rating">
+            <span class="stars" aria-label="4 звезды">
+              <img src="images/icon-star.svg">
+              <img src="images/icon-star.svg">
+              <img src="images/icon-star.svg">
+              <img src="images/icon-star.svg"> </span>
+            <span> Рейтинг: 8,5</span> </p>
         </li>
+
         <li class="lodge-card">
             <img class="lodge-card-image" src="images/catalog-lodge-villasatpocodiablo.jpg"
             width="300" height="211" alt="hotel-villas-at-paco-diablo">
             <h3 class="lodge-card-title">Villas at Poco Diablo</h3>
-          </a>
           <p class="lodge-type"> Гостиница </p>
           <p class="lodge-card-price">От 5000 ₽</p>
           <p class="stars" aria-label="4 звезды">
@@ -164,18 +167,14 @@
             <img src="images/icon-star.svg">
             <img src="images/icon-star.svg">
             <img src="images/icon-star.svg"> </p>
-          </p>
           <p class="rating"> Рейтинг: 9,2</p>
           <a class="button lodge-card-button" href="#">Подробнее</a>
           <a class="button button-favorites" href="# ">B избранном</a>
-
         </li>
-
         <li class="lodge-card">
             <img class="lodge-card-image" src="images/catalog-lodge-desertquailInn.jpg"
             width="300" height="211" alt="hotel-desert-quallil-inn">
             <h3 class="lodge-card-title">Desert Quail Inn</h3>
-          </a>
           <p class="lodge-type"> Гостиница </p>
           <p class="lodge-card-price">От 2500 ₽</p>
           <p class="stars" aria-label="3 звезды">
@@ -199,7 +198,6 @@
           <p class="rating"> Рейтинг: 5</p>
           <a class="button lodge-card-button" href="#">Подробнее</a>
           <a class="button button-add-favorites" href="#">В избранное</a>
-
         </li>
       </ul>
     </section>
@@ -220,8 +218,7 @@
         </li>
         <li class="pagination-item">
           <a class="button pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Следующие страницы.</span> ...
-          </a>
+            <span class="visually-hidden">Следующие страницы.</span> ...</a>
         </li>
         <li class="pagination-item">
           <a class="button pagination-link" href="#">10</a>
@@ -240,10 +237,9 @@
       <h2 class="visually-hidden">Рассылка.</h2>
       <p class="newsletter-title">Подпишитесь на рассылку</p>
       <p class="newsletter-subtitle">Только полезная информация и никакого спама, <br>
-         честное бойскаутское!
-      </p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email visually-hidden">Email.</label>
+         честное бойскаутское!</p>
+      <form class="form-wrapper newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <!-- <label for="newsletter-email visually-hidden">Email.</label> -->
         <input class="field field-inner" placeholder="Ваш e-mail" type="email" name="newsletter-email"
         id="newsletter-email" required>
         <button class="newsletter-button" type="submit">
@@ -251,7 +247,6 @@
         </button>
       </form>
     </section>
-    </div>
   </main>
 
   <footer class="page-footer">
