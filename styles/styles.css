@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
 }
 
 *,
@@ -23,7 +23,7 @@
 html {
     height: 100%;
 }
-  
+
 body {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .main-header {
@@ -75,7 +75,7 @@ body {
 
 .navigation-list {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 390px;
     margin: 0;
     padding: 20px 0;
@@ -88,7 +88,7 @@ body {
 
 .navigation-user {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
@@ -146,13 +146,14 @@ body {
     text-align: center;
     min-height: 485px;
 }
+
 .welcome-container::after {
     content: url("../images/index-divider.svg");
 }
 
 .advantages {
     background-color: #FFFFFF;
-} 
+}
 
 .advantages-list {
     display: flex;
@@ -206,8 +207,9 @@ body {
     background-color: #82B3D3;
     color: #FFFFFF;
 }
+
 .accent20 {
-    background-color:  rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .accent12 {
@@ -233,13 +235,13 @@ body {
 .souvenirs::before {
     content: url("../images/advantages-souvenir.svg");
     width: 75px;
-    height: 72px;    
+    height: 72px;
 }
 
 .search {
-min-height: 417px;
-background: #FFFFFF;
-padding: 92px 313px;
+    min-height: 417px;
+    background: #FFFFFF;
+    padding: 92px 313px;
 }
 
 .search-title {
@@ -249,8 +251,7 @@ padding: 92px 313px;
     text-transform: uppercase;
 }
 
-.search-subtitle {
-}
+.search-subtitle {}
 
 .search-button {
     width: 574px;
@@ -291,7 +292,6 @@ padding: 92px 313px;
     border-radius: 10px 0 0 10px;
     padding-left: 22px;
     border: none;
-    margin: 0;
 }
 
 .newsletter-button {
@@ -314,7 +314,7 @@ padding: 92px 313px;
     background-color: #FFFFFF;
     width: 1200px;
 }
-  
+
 .footer-social-list {
     display: flex;
     justify-content: space-between;
@@ -412,12 +412,12 @@ padding: 92px 313px;
     list-style-type: none;
     padding: 0;
 }
+
 .filter-price {
     margin: 0 70px 0 105px;
 }
 
-.fiter-button {
-}
+.fiter-button {}
 
 .button-active {
     font-size: 16px;
@@ -471,7 +471,7 @@ padding: 92px 313px;
     padding: 14px 12px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .button-icon:first-child {
@@ -578,7 +578,7 @@ padding: 92px 313px;
     font-size: 18px;
     line-height: 21px;
     margin-left: auto;
-    
+
 }
 
 .inner-newsletter {
