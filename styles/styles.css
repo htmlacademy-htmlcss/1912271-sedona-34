@@ -499,7 +499,7 @@ body {
     width: 1056px;
     margin-left: 72px;
     list-style-type: none;
-    gap: 18px;
+    justify-content: space-between;
 }
 
 .lodge-card {
