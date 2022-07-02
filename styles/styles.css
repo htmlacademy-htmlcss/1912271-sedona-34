@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
 }
 
 *,
@@ -23,7 +23,7 @@
 html {
     height: 100%;
 }
-  
+
 body {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .main-header {
@@ -75,6 +75,7 @@ body {
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     width: 390px;
     margin: 0;
     padding: 20px 0;
@@ -87,7 +88,7 @@ body {
 
 .navigation-user {
     display: flex;
-    width: 264px;
+    flex-wrap: wrap;
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
@@ -110,18 +111,19 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    width: 160px;
+    align-items: center;
+    width: 140px;
     height: 37px;
-    text-decoration: none;
     background: #82B3D3;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     font-size: 16px;
     line-height: 20px;
     color: #ffff;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .navigation-list .button {
@@ -144,17 +146,19 @@ body {
     text-align: center;
     min-height: 485px;
 }
+
 .welcome-container::after {
     content: url("../images/index-divider.svg");
 }
 
 .advantages {
     background-color: #FFFFFF;
-} 
+}
 
 .advantages-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -177,12 +181,19 @@ body {
     line-height: 21px;
 }
 
+.advantages-number {
+    margin: 30px;
+}
+
 .advantages-item {
     width: 400px;
     min-height: 384px;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding-top: 93px;
+}
+
+.picture {
+    padding-top: 80px;
 }
 
 .image {
@@ -196,8 +207,9 @@ body {
     background-color: #82B3D3;
     color: #FFFFFF;
 }
+
 .accent20 {
-    background-color:  rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .accent12 {
@@ -227,8 +239,9 @@ body {
 }
 
 .search {
-min-height: 417px;
-background: #FFFFFF;
+    min-height: 417px;
+    background: #FFFFFF;
+    padding: 92px 313px;
 }
 
 .search-title {
@@ -236,9 +249,6 @@ background: #FFFFFF;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.search-subtitle {
 }
 
 .search-button {
@@ -256,6 +266,7 @@ background: #FFFFFF;
     background-image: url(../images/newsletter-background.jpg);
     background-size: 100% auto;
     min-height: 417px;
+    padding: 94px 200px;
 }
 
 .newsletter-title {
@@ -265,14 +276,15 @@ background: #FFFFFF;
     text-transform: uppercase;
 }
 
-.newsletter-subtitle {
+.form-wrapper {
+    display: flex;
 }
 
 .field {
     width: 600px;
     height: 60px;
     font-size: 18px;
-    font-weight: 21px;
+    line-height: 21px;
     color: #242424;
     background-color: #FFFFFF;
     border-radius: 10px 0 0 10px;
@@ -287,6 +299,7 @@ background: #FFFFFF;
     line-height: 36px;
     background-color: #82B3D3;
     border-radius: 0 10px 10px 0;
+    border: none;
 }
 
 .page-footer-container {
@@ -299,7 +312,7 @@ background: #FFFFFF;
     background-color: #FFFFFF;
     width: 1200px;
 }
-  
+
 .footer-social-list {
     display: flex;
     justify-content: space-between;
@@ -397,22 +410,21 @@ background: #FFFFFF;
     list-style-type: none;
     padding: 0;
 }
+
 .filter-price {
     margin: 0 70px 0 105px;
-}
-
-.fiter-button {
 }
 
 .button-active {
     font-size: 16px;
     line-height: 20px;
+    height: 48px;
 }
 
 .button-unactive {
     font-size: 16px;
     line-height: 20px;
-    background-color: ;
+    background-color: transparent;
 }
 
 .select {
@@ -434,8 +446,7 @@ background: #FFFFFF;
 .select-control {
     width: 290px;
     min-height: 50px;
-    border: 2px;
-    border-color: #E5E5E5;
+    border: 2px solid #E5E5E5;
     margin-right: 78px;
     font-size: 18px;
     line-height: 21px;
@@ -456,7 +467,7 @@ background: #FFFFFF;
     padding: 14px 12px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .button-icon:first-child {
@@ -482,20 +493,33 @@ background: #FFFFFF;
 
 .lodge-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
-    flex-wrap: wrap;
     width: 1056px;
+    margin-left: 72px;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .lodge-card {
+    min-height: 438px;
     padding: 20px;
-    margin-right: 18px;
 }
 
-.lodge-card:nth-child(3n) {
-    margin: 0;
+.lodge-card-type-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodge-card-button-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lodge-card-star-rating {
+    display: flex;
+    justify-content: space-between;
 }
 
 .lodge-card-title {
@@ -523,6 +547,7 @@ background: #FFFFFF;
     display: flex;
     width: 400px;
     list-style-type: none;
+    padding: 0;
 }
 
 .pagination-item .button {
@@ -545,13 +570,14 @@ background: #FFFFFF;
     font-size: 18px;
     line-height: 21px;
     margin-left: auto;
-    
+
 }
 
 .inner-newsletter {
-    min-height: 410;
+    min-height: 417px;
     text-align: center;
     background-color: #FFFFFF;
+    padding: 94px 200px;
 }
 
 .field-inner {
