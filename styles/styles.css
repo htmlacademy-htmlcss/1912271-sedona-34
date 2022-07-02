@@ -92,6 +92,7 @@ body {
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
+    align-items: center;
 }
 
 .navigation-link {
@@ -504,7 +505,7 @@ body {
 
 .lodge-card {
     display: grid;
-    grid-template-rows: 211px min-content min-content min-content;
+    grid-template-rows: 211px repeat(min-content);
     grid-template-columns: 150px 150px; 
     row-gap: 16px;
     column-gap: 11px;
@@ -534,6 +535,11 @@ body {
 
 .lodge-card-star {
     grid-column: 1/2;
+    align-items: center;
+}
+
+img {
+    padding: 0;
 }
 
 .lodge-card-rating {
