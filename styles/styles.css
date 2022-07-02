@@ -109,7 +109,7 @@ body {
 
 .button {
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     justify-content: center;
     align-items: center;
     width: 140px;
@@ -492,40 +492,55 @@ body {
 
 
 .lodge-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 340px); 
+    column-gap: 18px;
+    width: 1056px;
     margin: 0 auto;
     padding: 0;
-    width: 1056px;
-    margin-left: 72px;
     list-style-type: none;
     justify-content: space-between;
 }
 
 .lodge-card {
-    min-height: 438px;
+    display: grid;
+    grid-template-rows: 211px min-content min-content min-content;
+    grid-template-columns: 150px 150px; 
+    row-gap: 16px;
+    column-gap: 11px;
     padding: 20px;
+    min-height: 438px;
 }
 
-.lodge-card-type-price {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lodge-card-button-wraper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.lodge-card-star-rating {
-    display: flex;
-    justify-content: space-between;
+.lodge-card-image {
+    grid-column: 1/-1;
 }
 
 .lodge-card-title {
+    grid-column: 1/-1;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    margin: 0;
+}
+
+.lodge-card-type {
+    grid-column: 1/2;
+}
+
+.lodge-card-price {
+    grid-column: 2/3;
+}
+
+.lodge-card-star {
+    grid-column: 1/2;
+}
+
+.lodge-card-rating {
+    grid-column: 2/3;
+    background-color: #F2F2F2;
+    color:#242424;
+    cursor: auto;
 }
 
 .lodge-card-button {
@@ -578,6 +593,11 @@ body {
     text-align: center;
     background-color: #FFFFFF;
     padding: 94px 200px;
+}
+
+.inner-newsletter-button {
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .field-inner {
