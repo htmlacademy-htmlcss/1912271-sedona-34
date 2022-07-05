@@ -106,11 +106,11 @@ body {
 
 .icon-favorite::before {
     content: url("../images/icon-favorite.svg");
+    margin-right: 20px;
 }
 
 .button {
     display: flex;
-    margin: 0;
     justify-content: center;
     align-items: center;
     width: 140px;
@@ -129,7 +129,7 @@ body {
 
 .navigation-list .button {
     background-color: #756157;
-    margin-left: 20px;
+    margin: 14px 20px 14px 0;
 }
 
 .page-container {
@@ -144,12 +144,16 @@ body {
     background-color: #242424;
     background: url("../images/index-background.jpg");
     padding-bottom: 0;
+    padding-top: 50px;
     text-align: center;
     min-height: 485px;
 }
 
 .welcome-container::after {
     content: url("../images/index-divider.svg");
+    position: absolute;
+    top: 505px;
+    left: 413px;
 }
 
 .advantages {
@@ -169,12 +173,21 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    padding-top: 63px;
+    padding-bottom: 31px;
+    margin: 0;
+}
+
+.advantages-main-subtitle {
+    margin: 0;
+    margin-bottom: 90px;
 }
 
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .advantages-description {
@@ -183,7 +196,7 @@ body {
 }
 
 .advantages-number {
-    margin: 30px;
+    margin-bottom: 30px;
 }
 
 .advantages-item {
@@ -242,7 +255,7 @@ body {
 .search {
     min-height: 417px;
     background: #FFFFFF;
-    padding: 92px 313px;
+    padding: 92px 312px;
 }
 
 .search-title {
@@ -250,6 +263,11 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.search-subtitle {
+    margin-bottom: 55px;
 }
 
 .search-button {
@@ -265,7 +283,7 @@ body {
     color: #FFFFFF;
     background-color: #242424;
     background-image: url(../images/newsletter-background.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     min-height: 417px;
     padding: 94px 200px;
 }
@@ -275,6 +293,11 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.newsletter-subtitle {
+    margin-bottom: 45px;
 }
 
 .form-wrapper {
@@ -354,12 +377,15 @@ body {
     font-weight: 700;
     width: 495px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .breadcrumbs {
     display: flex;
     list-style-type: none;
     padding: 0;
+    padding-bottom: 40px;
+    margin: 0;
 }
 
 .breadcrumbs-hotel {
@@ -369,7 +395,7 @@ body {
 
 .breadcrumbs-home::before {
     content: url("../images/icon-home-breadcrumbs.svg");
-    margin-right: 10px;
+    margin-right: 14px;
 }
 
 .breadcrumbs-arrow::before {
@@ -396,12 +422,20 @@ body {
     display: flex;
     border: none;
     margin-right: 70px;
+    padding-left: 0;
 }
 
 .catalog-filter-title {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700px;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.catalog-filter-item {
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .catalog-filter-list {
@@ -410,6 +444,7 @@ body {
     line-height: 21px;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .filter-price {
@@ -420,6 +455,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     height: 48px;
+    margin-top: 60px;
 }
 
 .button-unactive {
@@ -494,7 +530,7 @@ body {
 
 .lodge-list {
     display: grid;
-    grid-template-columns: repeat(3, 340px); 
+    grid-template-columns: repeat(3, 340px);
     column-gap: 18px;
     width: 1056px;
     margin: 0 auto;
@@ -503,10 +539,9 @@ body {
     justify-content: space-between;
 }
 
-.lodge-card {
+.lodge-wrapper {
     display: grid;
-    grid-template-rows: 211px repeat(min-content);
-    grid-template-columns: 150px 150px; 
+    grid-template-columns: 150px 150px;
     row-gap: 16px;
     column-gap: 11px;
     padding: 20px;
@@ -517,12 +552,16 @@ body {
     grid-column: 1/-1;
 }
 
-.lodge-card-title {
+.lodge-card-link {
     grid-column: 1/-1;
+    text-decoration: none;
+    color: #242424;
+}
+
+.lodge-card-title {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
-    margin: 0;
 }
 
 .lodge-card-type {
@@ -538,14 +577,10 @@ body {
     align-items: center;
 }
 
-img {
-    padding: 0;
-}
-
 .lodge-card-rating {
     grid-column: 2/3;
     background-color: #F2F2F2;
-    color:#242424;
+    color: #242424;
     cursor: auto;
 }
 
@@ -562,6 +597,7 @@ img {
     margin: 0 auto;
     width: 1056px;
     align-items: center;
+    padding-top: 96px;
 }
 
 .pagination {
