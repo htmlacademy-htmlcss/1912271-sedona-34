@@ -100,12 +100,17 @@ body {
     line-height: 26px;
 }
 
-.icon-search::before {
-    content: url("../images/icon-search.svg");
+.icon-search {
+    background-image: url("../images/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
 }
 
-.icon-favorite::before {
-    content: url("../images/icon-favorite.svg");
+.icon-favorite {
+    background-image: url("../images/icon-favorite.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 20px;
 }
 
@@ -149,11 +154,10 @@ body {
     min-height: 485px;
 }
 
-.welcome-container::after {
-    content: url("../images/index-divider.svg");
-    position: absolute;
-    top: 505px;
-    left: 413px;
+.welcome-divider {
+    background-image: url("../images/index-divider.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px 157px;
 }
 
 .advantages {
@@ -393,13 +397,13 @@ body {
     line-height: 21px;
 }
 
-.breadcrumbs-home::before {
-    content: url("../images/icon-home-breadcrumbs.svg");
+.breadcrumbs-home {
+    background-image: url("../images/icon-home-breadcrumbs.svg");
     margin-right: 14px;
 }
 
-.breadcrumbs-arrow::before {
-    content: url("../images/icon-breadcrumbs-arrow.svg");
+.breadcrumbs-arrow {
+    background-image: url("../images/icon-breadcrumbs-arrow.svg");
     margin-right: 10px;
 }
 
@@ -550,6 +554,7 @@ body {
 
 .lodge-card-image {
     grid-column: 1/-1;
+    margin-bottom: 16px;
 }
 
 .lodge-card-link {
@@ -562,6 +567,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    margin: 0;
 }
 
 .lodge-card-type {
