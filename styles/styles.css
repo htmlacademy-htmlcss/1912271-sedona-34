@@ -76,66 +76,64 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    width: 390px;
     margin: 0;
     padding: 20px 0;
     list-style-type: none;
+    margin-right: 34px;
 }
 
-.navigation-item {
-    margin-right: 34px;
+.navigation-link {
     position: relative;
+    display: block; 
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    margin-right: 34px;
 }
 
 .navigation-user {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
     align-items: center;
 }
 
-.navigation-link {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-
-}
-
 .navigation-item {
-    position: relative;
-
 }
 
+.icon-search {
+
+}
+.navigation-icon {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: 0 auto;
-    padding: 24px 12px;
+    margin: auto;
 }
 
-.navigation-icon {
-position: absolute;
-width: 18.05px;
-height: 18.1px;
-left: calc(50% - 18.05px/2 + 0px);
-top: calc(50% - 18.1px/2 - 0.5px);
+.icon-favorite {
+
 }
 
 .favorite-counter {
     font-size: 10px;
     line-height: 13px;
     text-align: center;
+    color: #FFFFFF;
     background: #7DB54F;
     border: 1px solid #000000;
     background-size: 20px 20px;
-    border-radius: 10px;
+    border-radius: 50%;
+    padding: 2px;
     position: absolute;
-    top: 15px;
-    left: 24px;
+    top: -15px;
+    left: 12px;
 }
 
 .button {
@@ -159,6 +157,7 @@ top: calc(50% - 18.1px/2 - 0.5px);
 
 .navigation-list .button {
     background-color: #756157;
+    margin: 0;
     margin-left: 20px;
 }
 
@@ -244,7 +243,7 @@ top: calc(50% - 18.1px/2 - 0.5px);
 
 .image {
     width: 800px;
-    min-height: 384px;
+    height: 384px;
     padding: 0;
 }
 
