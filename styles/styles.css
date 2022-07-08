@@ -65,7 +65,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     min-height: 70px;
-    text-align: center;
+    align-items: center;
 }
 
 .navigation-logo {
@@ -84,11 +84,10 @@ body {
 
 .navigation-item {
     margin-right: 34px;
+    position: relative;
 }
 
 .navigation-user {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
@@ -98,20 +97,45 @@ body {
 .navigation-link {
     font-size: 20px;
     line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+
 }
 
-.icon-search {
-    background-image: url("../images/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 20px;
+.navigation-item {
+    position: relative;
+
 }
 
-.icon-favorite {
-    background-image: url("../images/icon-favorite.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 24px 12px;
+}
+
+.navigation-icon {
+position: absolute;
+width: 18.05px;
+height: 18.1px;
+left: calc(50% - 18.05px/2 + 0px);
+top: calc(50% - 18.1px/2 - 0.5px);
+}
+
+.favorite-counter {
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    background: #7DB54F;
+    border: 1px solid #000000;
+    background-size: 20px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    left: 24px;
 }
 
 .button {
@@ -125,6 +149,7 @@ body {
     border-radius: 4px;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 700;
     color: #ffff;
     text-align: center;
     text-transform: uppercase;
@@ -134,7 +159,7 @@ body {
 
 .navigation-list .button {
     background-color: #756157;
-    margin: 14px 20px 14px 0;
+    margin-left: 20px;
 }
 
 .page-container {
@@ -152,12 +177,15 @@ body {
     padding-top: 50px;
     text-align: center;
     min-height: 485px;
+    position: relative;
 }
 
-.welcome-divider {
-    background-image: url("../images/index-divider.svg");
-    background-repeat: no-repeat;
-    background-size: 1200px 157px;
+
+.welcome-container::after {
+    content: url("../images/index-divider.svg");
+    position: absolute;
+    top: 428px;
+    left: 0;
 }
 
 .advantages {
@@ -217,7 +245,6 @@ body {
 .image {
     width: 800px;
     min-height: 384px;
-    margin: 0;
     padding: 0;
 }
 
@@ -350,6 +377,10 @@ body {
     margin-right: 42px;
 }
 
+.footer-social-item {
+    padding: 0 10px;
+}
+
 .contacts-phone {
     width: 720px;
     margin-right: 40px;
@@ -397,13 +428,13 @@ body {
     line-height: 21px;
 }
 
-.breadcrumbs-home {
-    background-image: url("../images/icon-home-breadcrumbs.svg");
+.breadcrumbs-home::before {
+    content: url("../images/icon-home-breadcrumbs.svg");
     margin-right: 14px;
 }
 
-.breadcrumbs-arrow {
-    background-image: url("../images/icon-breadcrumbs-arrow.svg");
+.breadcrumbs-arrow::before {
+    content: url("../images/icon-breadcrumbs-arrow.svg");
     margin-right: 10px;
 }
 
@@ -580,7 +611,7 @@ body {
 
 .lodge-card-star {
     grid-column: 1/2;
-    align-items: center;
+    padding: 10px 0;
 }
 
 .lodge-card-rating {
