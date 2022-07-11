@@ -104,7 +104,7 @@ body {
 
 .navigation-link:active {
     font-size: 21px;
-    color: rgba(94, 90, 88);
+    color: #756257;
 }
 
 .navigation-link-current::before {
@@ -126,10 +126,6 @@ body {
     align-items: center;
 }
 
-.navigation-item {}
-
-.icon-search {}
-
 .navigation-icon {
     position: absolute;
     top: 0;
@@ -139,15 +135,13 @@ body {
     margin: auto;
 }
 
-.icon-favorite {}
-
-.favorite-counter {
+.icon-favorite::after {
+    content: attr(data-count);
     font-size: 10px;
     line-height: 13px;
     text-align: center;
     color: #FFFFFF;
     background: #7DB54F;
-    border: 1px solid #000000;
     background-size: 20px 20px;
     border-radius: 50%;
     padding: 2px;
@@ -209,7 +203,6 @@ body {
 
 .navigation-button:hover {
     background: #615048;
-    ;
 }
 
 .navigation-button:active {
@@ -244,7 +237,7 @@ body {
 .welcome-container::after {
     content: url("../images/index-divider.svg");
     position: absolute;
-    top: 428px;
+    bottom: -7px;
     left: 0;
 }
 
@@ -376,7 +369,6 @@ body {
 
 .search-button:hover {
     background: #615048;
-    ;
 }
 
 .search-button:active {
@@ -479,19 +471,19 @@ body {
 }
 
 .footer-social-icon:link {
-    fill: #83B3D3;
-}
-
-.footer-social-icon:focus {
-    fill: #68A2CA;
+    color: #83B3D3;
 }
 
 .footer-social-icon:hover {
-    fill: #68A2CA;
+    color: #68A2CA;
 }
 
 .footer-social-item:disabled {
-    fill: 104, 162, 202, 0.3;
+    color: 104, 162, 202, 0.3;
+}
+
+.footer-social-icon:focus {
+    color: #68A2CA;
 }
 
 .contacts-phone {
@@ -520,6 +512,9 @@ body {
     width: 115px;
 }
 
+.footer-logo:link {
+    color: #000000
+}
 .footer-logo:focus {
     color: #756157
 }
@@ -639,6 +634,86 @@ body {
     margin: 0 70px 0 105px;
 }
 
+.price {
+    margin-bottom: 34px;
+}
+
+.price-scale {
+    position: relative;
+    width: 288px;
+    height: 4px;
+    background-color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.price-scale .price-bar {
+    opacity: initial;
+}
+
+.price-bar {
+    position: absolute;
+    width: 227px;
+    height: 4px;
+    background: #FFFFFF;
+}
+
+.toggle-min,
+.toggle-max {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.toggle-min {
+    position: absolute;
+    bottom: -8px;
+}
+
+.toggle-max {
+    position: absolute;
+    left: 227px;
+    bottom: -8px;
+}
+
+.price-toggle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.price-toggle:active {
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.price-toggle:focus {
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.price-wrapper-inputs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.price-input {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 145px;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.min-price-input {
+    border-radius: 4px 0 0 4px;
+}
+
+.max-price-input {
+    border-radius: 0 4px 4px 0;
+}
+
+
 .button-active {
     font-size: 16px;
     line-height: 20px;
@@ -664,10 +739,33 @@ body {
     color: #FFFFFF;
 }
 
-.button-unactive {
+.button-reset {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400px;
+    text-transform: none;
     background-color: transparent;
+}
+
+.button-reset:hover {
+    color: #FFFFFF;
+    opacity: 0.6;
+    background-color: transparent;
+
+}
+
+.button-reset:active {
+    color: #FFFFFF;
+    opacity: 0.3;
+    background-color: transparent;
+
+}
+
+.button-reset:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+    background-color: transparent;
+
 }
 
 .select {
@@ -844,7 +942,6 @@ body {
 
 .lodge-card-button:hover {
     background: #615048;
-    ;
 }
 
 .lodge-card-button:active {
