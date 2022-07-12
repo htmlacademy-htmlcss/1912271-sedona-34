@@ -58,6 +58,7 @@ body {
     margin: 0 auto;
     color: black;
     background-color: #ffff;
+
 }
 
 .navigation {
@@ -67,6 +68,7 @@ body {
     height: 65px;
     align-items: center;
     background-color: #FFFFFF;
+    z-index: 1;
 }
 
 .navigation-logo {
@@ -108,6 +110,7 @@ body {
 
 .navigation-link-current {
     border-bottom: 2px solid #756257;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 .navigation-user {
@@ -223,10 +226,10 @@ body {
     position: relative;
 }
 
-
 .welcome-container::after {
     content: url("../images/index-divider.svg");
     position: absolute;
+    width: 100%;
     bottom: -7px;
     left: 0;
 }
@@ -263,6 +266,7 @@ body {
     line-height: 28px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .advantages-description {
@@ -469,7 +473,7 @@ body {
 }
 
 .footer-social-item:disabled {
-    color: 104, 162, 202, 0.3;
+    color: rgda (104, 162, 202, 0.3);
 }
 
 .footer-social-icon:focus {
@@ -619,17 +623,119 @@ body {
     margin: 0;
 }
 
-.filter-price {
-    margin: 0 70px 0 105px;
+.option {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+}
+
+.control-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+}
+.checkbox {
+    border-radius: 4px;
+}
+.radio {
+    border-radius: 50%;
+}
+
+.control-mark:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.option:active .control-mark {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.control-mark:focus {
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid #83B3D3;
+}
+
+.option-input:disabled+.control-mark {
+    background: gainsboro;
+}
+
+.option-input[type="checkbox"]:checked+.control-mark::before {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    transform: rotate(60deg);
+    width: 9px;
+    height: 3px;
+    background-color: #242424;
+    content: "";
+
+}
+
+.option-input[type="checkbox"]:checked+.control-mark::after {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    transform: rotate(-60deg);
+    width: 15px;
+    height: 3px;
+    background-color: #242424;
+    content: "";
+
+}
+
+.option-input[type="radio"]:checked+.control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #242424;
+    content: "";
+
 }
 
 
 .filter-price {
     display: flex;
+    margin: 0 70px 0 105px;
+}
+
+.price-input {
+    background: transparent;
+    width: 145px;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 0 12px 0 18px;
+    align-items: center;
+}
+
+.min-price-input {
+    border-radius: 4px 0 0 4px;
+    border-right: 1px;
+}
+
+.max-price-input {
+    border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-label {
+    position: relative;
+}
+
+.price-input-from-to {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .price-wrapper-inputs {
     display: flex;
+    margin-bottom: 32px;
 }
 
 
@@ -637,7 +743,7 @@ body {
     position: relative;
     width: 288px;
     height: 4px;
-    background-color: rgba(255, 255 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .price-bar {
@@ -653,17 +759,20 @@ body {
     height: 20px;
     background: #FFFFFF;
     border-radius: 5px;
+    border: none;
 }
 
 .toggle-min {
     position: absolute;
     bottom: -8px;
+    border-right: 1px;
 }
 
 .toggle-max {
     position: absolute;
     left: 227px;
     bottom: -8px;
+    border-left: 1px;
 }
 
 .price-toggle:hover {
@@ -679,23 +788,6 @@ body {
     border: 2px solid #83B3D3;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
-
-.price-input {
-   background: transparent;
-    width: 145px;
-    height: 48px;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-}
-
-.min-price-input {
-    border-radius: 4px 0 0 4px;
-}
-
-.max-price-input {
-    border-radius: 0 4px 4px 0;
-}
-
 
 .button-active {
     font-size: 16px;
@@ -736,7 +828,7 @@ body {
 }
 
 .button-reset:active {
-    color:rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     background-color: transparent;
 }
 
@@ -763,7 +855,15 @@ body {
     margin-right: 190px;
 }
 
+.select-control-wrapper {
+    position: relative;
+    display: flex;
+}
+
+
+
 .select-control {
+    position: relative;
     width: 290px;
     min-height: 50px;
     border: 2px solid #E5E5E5;
@@ -771,6 +871,11 @@ body {
     margin-right: 78px;
     font-size: 18px;
     line-height: 21px;
+}
+
+.select-arrow-down {
+    position: absolute;
+    color: #000;
 }
 
 .select-control:hover {
@@ -867,9 +972,9 @@ body {
 
 .lodge-wrapper {
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 140px 140px;
     row-gap: 16px;
-    column-gap: 11px;
+    column-gap: 20px;
     padding: 20px;
     min-height: 438px;
 }
@@ -1048,13 +1153,22 @@ body {
 }
 
 .number-cards {
-    width: 160px;
+    display: flex;
+    width: 386px;
     min-height: 49px;
     font-size: 18px;
     line-height: 21px;
     margin-left: auto;
-    outline: 2px solid #E5E5E5;
+    justify-content: space-between;
+    align-items: center;
 }
+
+number-cards-select {
+    display: block;
+    width: 160px;
+    outline: 2px solid #E5E5E5;
+}   
+
 
 .number-cards:focus {
     outline: 2px solid #68A2CA;
