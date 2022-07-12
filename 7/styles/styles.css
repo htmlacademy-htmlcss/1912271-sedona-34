@@ -66,6 +66,7 @@ body {
     margin: 0 auto;
     height: 65px;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .navigation-logo {
@@ -76,9 +77,9 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
     margin: 0;
     padding: 20px 0;
-    list-style-type: none;
     margin-right: 34px;
 }
 
@@ -90,49 +91,38 @@ body {
     font-weight: 700;
     color: #000;
     text-decoration: none;
-    margin-right: 24px;
-    padding: 15px 10px;
+    padding: 20px 17px;
 }
 
 .navigation-link:focus {
-    font-size: 22px;
+    color: rgba(117, 97, 87, 1);
 }
 
 .navigation-link:hover {
-    font-size: 22px;
+    color: rgba(117, 97, 87, 1);
 }
 
 .navigation-link:active {
-    font-size: 21px;
     color: #756257;
 }
 
-.navigation-link-current::before {
-    position: absolute;
-    right: 10px;
-    bottom: -5px;
-    left: 10px;
-    height: 2px;
-    background-color: #756257;
-    content: "";
+.navigation-link-current {
+    border-bottom: 2px solid #756257;
 }
 
 .navigation-user {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     font-size: 20px;
     line-height: 26px;
-    align-items: center;
 }
 
 .navigation-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    margin: 0;
+    padding: 23px 12px;
 }
 
 .icon-favorite::after {
@@ -146,8 +136,8 @@ body {
     border-radius: 50%;
     padding: 2px;
     position: absolute;
-    top: -15px;
-    left: 12px;
+    bottom: 40px;
+    left: 26px;
 }
 
 .button {
@@ -496,16 +486,16 @@ body {
     text-decoration: none;
 }
 
-.contacts-phone:focus {
-    color: #756157
-}
-
 .contacts-phone:hover {
     color: #756157;
 }
 
-.contacts-phone:disabled {
+.contacts-phone:active {
     color: rgba(117, 97, 87, 0.3)
+}
+
+.contacts-phone:focus {
+    color: #756157
 }
 
 .footer-copyright-logo {
@@ -515,19 +505,18 @@ body {
 .footer-logo:link {
     color: #000000
 }
-.footer-logo:focus {
-    color: #756157
-}
 
 .footer-logo:hover {
     color: #756157;
 }
 
-.footer-logo:disabled {
+.footer-logo:active {
     color: rgba(117, 97, 87, 0.3)
 }
 
-
+.footer-logo:focus {
+    color: #756157
+}
 
 .main-inner {
     width: 1200px;
@@ -634,20 +623,21 @@ body {
     margin: 0 70px 0 105px;
 }
 
-.price {
-    margin-bottom: 34px;
+
+.filter-price {
+    display: flex;
 }
+
+.price-wrapper-inputs {
+    display: flex;
+}
+
 
 .price-scale {
     position: relative;
     width: 288px;
     height: 4px;
-    background-color: #FFFFFF;
-    opacity: 0.3;
-}
-
-.price-scale .price-bar {
-    opacity: initial;
+    background-color: rgba(255, 255 255, 0.3);
 }
 
 .price-bar {
@@ -690,15 +680,8 @@ body {
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
-.price-wrapper-inputs {
-    display: flex;
-    margin-bottom: 20px;
-}
-
 .price-input {
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
+   background: transparent;
     width: 145px;
     height: 48px;
     border: 2px solid #FFFFFF;
@@ -748,17 +731,13 @@ body {
 }
 
 .button-reset:hover {
-    color: #FFFFFF;
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.2);
     background-color: transparent;
-
 }
 
 .button-reset:active {
-    color: #FFFFFF;
-    opacity: 0.3;
+    color:rgba(0, 0, 0, 0.3);
     background-color: transparent;
-
 }
 
 .button-reset:focus {
@@ -787,15 +766,11 @@ body {
 .select-control {
     width: 290px;
     min-height: 50px;
-    outline: 2px solid #E5E5E5;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
     margin-right: 78px;
     font-size: 18px;
     line-height: 21px;
-}
-
-.select-control:focus {
-    outline: 2px solid #68A2CA;
-    border-radius: 4px;
 }
 
 .select-control:hover {
@@ -814,8 +789,13 @@ body {
     border-radius: 4px;
 }
 
+.select-control:focus {
+    outline: 2px solid #68A2CA;
+    border-radius: 4px;
+}
+
 .select-arrow-down:disabled {
-    fill: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .select-button {
@@ -1022,11 +1002,6 @@ body {
     margin-right: 8px;
 }
 
-.pagination-button:focus {
-    background: #68A2CA;
-    border: 1px solid #82B3D3;
-}
-
 .pagination-button:hover {
     background: #68A2CA;
     border: 1px solid #82B3D3;
@@ -1042,12 +1017,12 @@ body {
     color: #FFFFFF;
 }
 
-.current {
-    background-color: #F2F2F2;
-    color: #242424;
+.pagination-button:focus {
+    background: #68A2CA;
+    border: 1px solid #82B3D3;
 }
 
-.current:focus {
+.current {
     background-color: #F2F2F2;
     color: #242424;
 }
@@ -1063,6 +1038,11 @@ body {
 }
 
 .current:disabled {
+    background-color: #F2F2F2;
+    color: #242424;
+}
+
+.current:focus {
     background-color: #F2F2F2;
     color: #242424;
 }
