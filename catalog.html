@@ -140,7 +140,7 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <div class="blabla">
+          <div class="price-select">
             <div class="price-wrapper-inputs">
               <label class="catalog-filter-label">
                 <input class="price-input min-price-input" type="text" value="0" name="min-price">
@@ -177,16 +177,10 @@
 
     <section class="select">
       <h2 class="result"> Найдено гостиниц: 38 </h2>
-      <div class="select-control-wrapper">
+        <div class= "sorting">
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
-
       </select>
-      <svg class="select-arrow-down" aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M4.33 7.34c.3-.29.77-.29 1.06 0l4.72 4.72 4.72-4.72a.75.75 0 0 1 1.06 1.07l-5.25 5.25c-.29.29-.76.29-1.06 0L4.33 8.4a.75.75 0 0 1 0-1.07Z" />
-    </svg>
     </div>
 
       <div class="select-button">
@@ -322,10 +316,9 @@
             <span class="button lodge-card-rating"> Рейтинг: 5</span>
           </article>
         </li>
-
       </ul>
     </section>
-
+    <div class="paginatoin-wrapper">
     <div class="pagination-container">
       <ul class="pagination">
         <li class="pagination-item">
@@ -350,16 +343,15 @@
       </ul>
 
       <form action="https://echo.htmlacademy.ru/courses" method="post" class="number-cards">
+        <div class="number-cards-select-wrapper">
         <legend> Гостиниц на странице</legend>
         <select class="number-cards-select">
           <option value="4" width="160px">4</option>
-          <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M4.33 7.34c.3-.29.77-.29 1.06 0l4.72 4.72 4.72-4.72a.75.75 0 0 1 1.06 1.07l-5.25 5.25c-.29.29-.76.29-1.06 0L4.33 8.4a.75.75 0 0 1 0-1.07Z" />
-          </svg>
         </select>
+      </div>
       </form>
     </div>
+  </div>
 
     <section class="inner-newsletter">
       <h2 class="visually-hidden">Рассылка.</h2>
