@@ -530,19 +530,15 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
-  }
-
-  .modal {
-    position: relative;
-    margin: auto;
-    padding: 62px 70px 23px 70px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: X0 Y25 B50 S0 #000000 15%
 }
 
-.modal-hotel-search {
+.modal {
+    position: relative;
+    margin: auto;
     width: 715px;
+    padding: 62px 67px 23px 62px;
+    background-color: #ffffff;
+    border-radius: 30px;
 }
 
 .modal-button-close {
@@ -562,9 +558,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-  } 
+}
 
-  .modal-title {
+.modal-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -573,11 +569,29 @@ body {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 63px;
-  }
+    padding-left: 3px;
+}
 
-  .field-group {
+.date-option .modal-field {
+    display: inline-block;
+    width: 120px;
+    margin-right: 35px;
+}
+
+.modal-form {
+    margin-bottom: 40px;
+}
+
+.date-option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 585px;
+}
+
+.field-group {
     margin: 0;
-  }
+}
 
 .modal-field {
     font-size: 20px;
@@ -591,38 +605,33 @@ body {
     background-color: #F2F2F2;
     font-size: 18px;
     line-height: 21px;
+    padding-left: 17px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .input-date {
-    width: 450px;
+    width: 420px;
     background-image: url(../images/modal-date.svg);
     background-repeat: no-repeat;
     background-position: right 17px center;
 }
 
-.input-amount {
-    position: relative;
-    width: 133px;
-}
-
-.input-amount::before {
-    position: absolute;
-    content: url(../images/modal-minus.svg);
-}
-
-.input-amount::after {
-    position: absolute;
-    content: url(../images/modal-plus.svg);
-}
-
 .inform {
     font-size: 16px;
     line-height: 21px;
+    margin: 0;
+    margin-top: 8px;
     margin-bottom: 11px;
+    margin-left: 160px;
 }
 
 .modal-error {
     color: #FF5757;
+}
+
+.input-amount {
+    width: 133px;
 }
 
 .informer {
@@ -636,7 +645,7 @@ body {
 }
 
 .modal-button-search {
-    width: 420px;
+    width: 575px;
     height: 60px;
     border-radius: 10px;
     color: #FFFFFF;
@@ -644,7 +653,37 @@ body {
     line-height: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 12px 167px;
 }
+
+.modal-button-search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    max-width: 420px;
+}
+
+input[type=number] {
+    max-width: 133px;
+}
+
+.modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 
 .main-inner {
     width: 1200px;
@@ -761,9 +800,11 @@ body {
     height: 20px;
     background: #FFFFFF;
 }
+
 .checkbox {
     border-radius: 4px;
 }
+
 .radio {
     border-radius: 50%;
 }
@@ -1284,7 +1325,7 @@ number-cards-select {
     display: block;
     width: 160px;
     outline: 2px solid #E5E5E5;
-}   
+}
 
 
 .number-cards:focus {
