@@ -32,19 +32,17 @@
           <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path
-              d="m18.61 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
-              " />
+              d="m18.61 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
           </svg>
-          <span class="visually-hidden">Поиск.</span>
+          <span class=" visually-hidden">Поиск.</span>
         </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link navigation-icon icon-favorite" data-count="12" href="#">
           <svg aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="currentColor"
-           xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M10.01 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.61 2c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
-              />
+              d="M10.01 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.61 2c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
           </svg>
           <span class="visually-hidden">Избранное.</span>
         </a>
@@ -53,7 +51,8 @@
         <a class="navigation-link  button navigation-button" href="#">Хочу сюда</a>
       </li>
     </ul>
-  </nav>  </header>
+  </nav>
+  </header>
   <main class="main-container main-index">
     <div class="page-container">
       <h1 class="visually-hidden">Отдых в Седоне.</h1>
@@ -142,8 +141,8 @@
             <h3 class="advantages-title">Мало <br>туристов</h3>
             <p class="advantages-description advantages-number"> №5
             <p class="advantages-description">
-              Большинство едет в Гранд Каньон
-              <br>и толпится там
+              Большинство едет в Гранд <br>
+              Каньон и толпится там
             </p>
           </li>
         </ul>
@@ -172,6 +171,7 @@
           </button>
         </form>
       </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
@@ -228,9 +228,87 @@
         </a>
       </section>
     </div>
-
   </footer>
+
+  <div class=" modal-container-close modal-container">
+    <div class="modal modal-hotel-search">
+      <button class="modal-button-close">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="date-option">
+            <div class="arrival-wraper">
+              <label class="modal-field" for="">Дата Заезда</label>
+              <input class="input-arrival input-date input" type="text" id="" name="" placeholder="27 апреля 2020">
+            <p class="inform modal-error"> Мы не можем отправить вас в прошлое. </p>
+          </div>
+          <div class="departure-wraper">
+              <label class="modal-field" for="">Дата Выезда</label>
+              <input class="input-departure input-date input" type="text" id="" name="" placeholder="1 сентября 2021">
+            <p class="inform modal-successfully"> На эти даты есть свободные номера. Пока есть. </p>
+          </div>
+        </div>
+
+          <div class="amount">
+            <div class="adult-wrapper">
+              <label class="modal-field" for="">Взрослые:</label>
+              <button class="amount-minus">
+                <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M.11 0v2h14V0h-14Z" />
+                </svg>
+              </button>
+              <input class="input-adult input-amount input" type="number" id="" name="" placeholder="2">
+              <button class="amount-plus" type="">
+                <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+              </button>
+            </div>
+            
+            <div class="children-wrapper">
+              <label class="modal-field modal-field-children" for="">Дети:</label>
+
+              <span class="tooltip">
+                <button class="tooltip-toggle type="button" aria-labelledby="tooltip-label">
+                </button>
+              </span>
+              <span class="visually-hidden"> Дополнительная информация.
+              </span>
+              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            
+              <button class="amount-minus" type="">
+                <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M.11 0v2h14V0h-14Z"/>
+                </svg>
+              </button>
+              <input class="input-children input" type="number" id="" name="" placeholder="1">
+              <button class="amount-plus">
+                <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </form>
+
+      </section>
+      <div class="modal-button-search-wrapper">
+        <button class="button modal-button-search" type="submit">Найти</button>
+
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
