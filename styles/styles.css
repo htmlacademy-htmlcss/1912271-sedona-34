@@ -572,15 +572,17 @@ body {
     padding-left: 3px;
 }
 
+.modal-form {
+    margin-bottom: 40px;
+}
+
 .date-option .modal-field {
     display: inline-block;
     width: 120px;
     margin-right: 35px;
 }
 
-.modal-form {
-    margin-bottom: 40px;
-}
+
 
 .date-option {
     display: flex;
@@ -597,6 +599,7 @@ body {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+    text-align: left;
 }
 
 .input {
@@ -621,7 +624,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 9px;
     margin-bottom: 11px;
     margin-left: 160px;
 }
@@ -630,11 +633,7 @@ body {
     color: #FF5757;
 }
 
-.input-amount {
-    width: 133px;
-}
-
-.informer {
+.informer::after {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -667,7 +666,7 @@ input[type=text] {
 }
 
 input[type=number] {
-    max-width: 133px;
+    max-width: ;
 }
 
 .modal-form {
@@ -677,12 +676,47 @@ input[type=number] {
 }
 
 
-.amount {
+.adult-wrapper,
+.children-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 135px;
+    height: 50px;
 }
 
+.amount-minus {
+    padding: 15px 0 25px 15px;
+    border: none;
+}
+
+.amount-plus {
+    padding: 18px 18px 18px 0;
+    border: none;
+    margin-right: 56px;
+}
+
+.input-adult,
+.input-children {
+    width: 60px;
+    border: none;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.adult-wrapper .amount-minus {
+    margin-left: 67px;
+}
+
+.adult-wrapper .amount-plus {
+    margin-right: 55px;
+}
+
+.children-wrapper .amount-minus {
+    margin-left: 35px;
+}
+
+.amount {
+    display: flex;
+}
 
 
 .main-inner {
