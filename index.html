@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Отдых в Седоне</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
-
 <body>
   <header>
   <nav class="navigation">
@@ -24,9 +22,8 @@
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="catalog.html">Гостиницы</a>
-      </li>
+      </li>      
     </ul>
-
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link navigation-icon icon-search" href="#">
@@ -49,7 +46,7 @@
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link  button navigation-button" href="#">Хочу сюда</a>
+        <a class="navigation-link  button navigation-button" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -61,7 +58,6 @@
         <img class="welcome" src="images/index-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         <span class="welcome-divider"></span>
       </section>
-
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества.</h2>
         <p class="advantages-main-title">Седона — небольшой городок в Аризоне,
@@ -73,16 +69,15 @@
             <h3 class="advantages-title">Настоящий <br>городок</h3>
             <p class="advantages-description advantages-number"> №1
             <p class="advantages-description">
-              Седона — не аттракцион
-              <br>для туристов, там течёт
-              <br>своя жизнь
+              Седона — не аттракцион для
+              <br> туристов, там течёт своя 
+              <br>жизнь
             </p>
           </li>
           <li class="advantages-item image">
             <img src="images/advantages-picture-town.jpg" width="800" height="384" alt="Городской пейзаж">
           </li>
         </ul>
-
         <ul class="advantages-list">
           <li class="advantages-item picture accent12 home">
             <h3 class="advantages-title">Жильё</h3>
@@ -106,7 +101,6 @@
             </p>
           </li>
         </ul>
-
         <ul class="advantages-list">
           <li class="advantages-item image">
             <img src="images/advantages-picture-mountains.jpg" width="800" height="384" alt="Вид на горы">
@@ -148,7 +142,6 @@
           </li>
         </ul>
       </section>
-
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
         <p class="search-title">Заинтересовались?</p>
@@ -157,7 +150,6 @@
         </p>
         <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-
       <section class="newsletter">
         <h2 class="visually-hidden">Рассылка.</h2>
         <p class="newsletter-title">Подпишитесь на рассылку</p>
@@ -210,7 +202,6 @@
               <span class="visually-hidden">YouTube.</span>
             </a>
           </li>
-
         </ul>
       </section>
       <section class="footer-tel">
@@ -242,12 +233,12 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="date-option">
             <div class="arrival-wraper">
-              <label class="modal-field">Дата Заезда</label>
+              <label class="form-label">Дата Заезда</label>
               <input class="input-arrival input-date input" type="text" placeholder="27 апреля 2020">
             <p class="inform modal-error"> Мы не можем отправить вас в прошлое. </p>
           </div>
           <div class="departure-wraper">
-              <label class="modal-field">Дата Выезда</label>
+              <label class="form-label">Дата Выезда</label>
               <input class="input-departure input-date input" type="text" placeholder="1 сентября 2021">
             <p class="inform modal-successfully"> На эти даты есть свободные номера. Пока есть. </p>
           </div>
@@ -255,14 +246,14 @@
 
           <div class="amount">
             <div class="adult-wrapper">
-              <label class="modal-field">Взрослые:</label>
+              <label class="form-label">Взрослые:</label>
               <button class="amount-minus">
                 <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M.11 0v2h14V0h-14Z" />
                 </svg>
               </button>
-              <input class="input-adult input-amount input" type="number" placeholder="2">
+              <input class="input-adult input-amount input" placeholder="2">
               <button class="amount-plus">
                 <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
@@ -272,25 +263,23 @@
             </div>
             
             <div class="children-wrapper">
-              <label class="modal-field modal-field-children">Дети:</label>
-
+              <span class="form-label form-label-icon">
+              <label class="form-label form-label-children">Дети:</label>
               <span class="tooltip">
-                <button class="tooltip-toggle type="button" aria-labelledby="tooltip-label">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                 </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.</span>
+            </span>
               </span>
-              <span class="visually-hidden"> Дополнительная информация.
-              </span>
-              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
-                Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-            
+          
               <button class="amount-minus">
                 <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M.11 0v2h14V0h-14Z"/>
                 </svg>
               </button>
-              <input class="input-children input" type="number" placeholder="1">
+              <input class="input-children input" placeholder="1">
               <button class="amount-plus">
                 <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
@@ -300,13 +289,14 @@
             </div>
 
           </div>
-        </form>
+
 
       </section>
       <div class="modal-button-search-wrapper">
         <button class="button modal-button-search" type="submit">Найти</button>
 
       </div>
+    </form>
     </div>
   </div>
 
